@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.Label?>
+        <?import javafx.scene.control.RadioButton?>
+        <?import javafx.scene.control.TextField?>
+        <?import javafx.scene.control.ToggleGroup?>
+        <?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.s2z2.HelloController">
+<children>
+   <Label layoutX="220.0" layoutY="45.0" prefHeight="35.0" prefWidth="139.0" text="Zadaj cislo:" />
+   <TextField fx:id="inputNum" layoutX="220.0" layoutY="80.0" />
+   <RadioButton fx:id="isMM" layoutX="220.0" layoutY="116.0" mnemonicParsing="false" text="mm">
+      <toggleGroup>
+         <ToggleGroup fx:id="selector" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="isCM" layoutX="220.0" layoutY="154.0" mnemonicParsing="false" text="cm" toggleGroup="$selector" />
+   <RadioButton fx:id="isM" layoutX="220.0" layoutY="191.0" mnemonicParsing="false" text="m" toggleGroup="$selector" />
+   <RadioButton fx:id="isKM" layoutX="220.0" layoutY="225.0" mnemonicParsing="false" text="km" toggleGroup="$selector" />
+   <Button layoutX="322.0" layoutY="121.0" mnemonicParsing="false" onAction="#calculateUnits" text="Vyratat" />
+   <Label fx:id="resMM" layoutX="220.0" layoutY="274.0" prefHeight="17.0" prefWidth="160.0" text="mm: -" />
+   <Label fx:id="resCM" layoutX="220.0" layoutY="298.0" prefHeight="17.0" prefWidth="160.0" text="cm: -" />
+   <Label fx:id="resM" layoutX="220.0" layoutY="323.0" prefHeight="17.0" prefWidth="160.0" text="m: -" />
+   <Label fx:id="resKM" layoutX="220.0" layoutY="348.0" prefHeight="17.0" prefWidth="160.0" text="km: -" />
+</children>
+</Pane>
