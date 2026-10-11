@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="plocha" prefWidth="600" prefHeight="400"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.s3z2.HelloController"/>
